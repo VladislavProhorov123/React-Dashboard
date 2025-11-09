@@ -1,0 +1,8 @@
+.content {
+    height: 100vh;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    overflow-y: auto;
+    border-radius: 4px;
+    padding: 30px;
+}
