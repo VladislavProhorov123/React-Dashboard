@@ -1,0 +1,81 @@
+.form {
+  flex-direction: column;
+  display: flex;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+  padding: 12px;
+  background: #f8fafc;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: #586472;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #b8bcca;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.submit-btn {
+  background: #0048d9;
+  color: #fff;
+  padding-block: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  background: #002b80;
+  opacity: 0.8;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.agree {
+  color: #0048d9;
+}
+
+.agree-label {
+  font-size: 14px;
+  color: #b8bcca;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  color: #b8bcca;
+  width: 16px;
+  height: 16px;
+}
