@@ -3,6 +3,7 @@ import SideBar from '../SideBar/SideBar'
 import Content from '../Content/Content'
 import Header from '../Header/Header'
 import './Dashboard.css'
+import CardListDashboard from './CardListDashboard/CardListDashboard'
 
 export default function Dashboard() {
 
@@ -14,6 +15,7 @@ export default function Dashboard() {
         <Header />
         <Content activeTab={activeTab} />
       </div>
+      
     </div>
   )
 }
