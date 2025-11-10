@@ -14,10 +14,10 @@ import { DATA_CHARTS } from "../../../../Data/data";
 
 export default function Chart() {
   return (
-    <div className="chart-container" style={{ width: "100%", height: 300 }}>
+    <div className="chart-container" >
         <h3>Sales Details</h3>
       <ResponsiveContainer>
-        <LineChart data={DATA_CHARTS}>
+        <LineChart data={DATA_CHARTS} margin={{ top: 20, right: 30, left: 0, bottom: 50 }}>
           <CartesianGrid
             strokeDasharray="3 0"
             vertical={false}

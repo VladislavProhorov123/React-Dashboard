@@ -58,11 +58,17 @@ export const CARD_DASHBOARD = [
 ];
 
 export const DATA_CHARTS = [
-  { name: "Янв", value: 400 },
-  { name: "Фев", value: 3000 },
-  { name: "Мар", value: 500 },
-  { name: "Апр", value: 7000 },
-  { name: "Май", value: 600 },
-  { name: "Июн", value: 9000 },
+  { name: "5k", value: 0 },
+  { name: "10k", value: 3000 },
+  { name: "15k", value: 1500 },
+  { name: "20k", value: 8490 },
+  { name: "25k", value: 7900 },
+  { name: "30k", value: 8000 },
+  { name: "35k", value: 4900 },
+  { name: "40k", value: 2050 },
+  { name: "45k", value: 5700 },
+  { name: "50k", value: 7630 },
+  { name: "55k", value: 8400 },
+  { name: "60k", value: 9100 },
 ];
 
