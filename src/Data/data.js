@@ -72,3 +72,7 @@ export const DATA_CHARTS = [
   { name: "60k", value: 9100 },
 ];
 
+export const DATA_CIRCLE = [
+  {name: 'New Customers', value: 34249},
+  {name: 'Repeated', value: 1420}
+]

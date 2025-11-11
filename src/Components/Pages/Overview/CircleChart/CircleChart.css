@@ -1,0 +1,24 @@
+.circle-chart {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 360px;
+  height: 365px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+
+.chart-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-chart h3 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.circle-chart *:focus {
+  outline: none;
+  cursor: pointer;
+}
