@@ -7,6 +7,10 @@ import short from "/src/assets/short.svg";
 import card2 from "/src/assets/card2.svg";
 import card3 from "/src/assets/card3.svg";
 import card4 from "/src/assets/card4.svg";
+import watch from "/src/assets/apple-watch.jpg";
+import air from "/src/assets/apple-hier.png";
+import iphone from "/src/assets/iphone.png";
+
 
 export const LANGUAGES = [
   { code: "en", name: "English", flag: english },
@@ -75,4 +79,10 @@ export const DATA_CHARTS = [
 export const DATA_CIRCLE = [
   {name: 'New Customers', value: 34249},
   {name: 'Repeated', value: 1420}
+]
+
+export const DATA_SWIPER = [
+  {id: 1, title: 'Apple Watch 2024', price: '$89.00', img: watch},
+  {id: 2, title: 'Apple AirPods 2019', price: '$157.90', img: air},
+  {id: 3, title: 'Iphone Innovation 2021', price: '$225.50', img: iphone}
 ]
