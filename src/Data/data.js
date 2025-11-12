@@ -11,7 +11,6 @@ import watch from "/src/assets/apple-watch.jpg";
 import air from "/src/assets/apple-hier.png";
 import iphone from "/src/assets/iphone.png";
 
-
 export const LANGUAGES = [
   { code: "en", name: "English", flag: english },
   { code: "ua", name: "French", flag: franch },
@@ -77,12 +76,132 @@ export const DATA_CHARTS = [
 ];
 
 export const DATA_CIRCLE = [
-  {name: 'New Customers', value: 34249},
-  {name: 'Repeated', value: 1420}
-]
+  { name: "New Customers", value: 34249 },
+  { name: "Repeated", value: 1420 },
+];
 
 export const DATA_SWIPER = [
-  {id: 1, title: 'Apple Watch 2024', price: '$89.00', img: watch},
-  {id: 2, title: 'Apple AirPods 2019', price: '$157.90', img: air},
-  {id: 3, title: 'Iphone Innovation 2021', price: '$225.50', img: iphone}
-]
+  { id: 1, title: "Apple Watch 2024", price: "$89.00", img: watch },
+  { id: 2, title: "Apple AirPods 2019", price: "$157.90", img: air },
+  { id: 3, title: "Iphone Innovation 2021", price: "$225.50", img: iphone },
+];
+
+export const DATA_SALES = [
+  { name: 2015, revenue: 100, profit: 200 },
+  { name: 2016, revenue: 700, profit: 900 },
+  { name: 2017, revenue: 500, profit: 600 },
+  { name: 2018, revenue: 250, profit: 150 },
+  { name: 2019, revenue: 300, profit: 500 },
+];
+
+export const TABLE_DASHBOARD = [
+  {
+    id: 1,
+    img: watch,
+    name: "Apple Watch",
+    location: "6087 Marjolaine Landing",
+    date: "June",
+    piece: 423,
+    amount: "$39,395",
+    status: "Delivered",
+  },
+  {
+    id: 2,
+    img: watch,
+    name: "Apple Watch",
+    location: "6088 Marjolaine Landing",
+    date: "May",
+    piece: 406,
+    amount: "$30,695",
+    status: "Rejected",
+  },
+  {
+    id: 3,
+    img: watch,
+    name: "Apple Watch",
+    location: "6089 Marjolaine Landing",
+    date: "April",
+    piece: 612,
+    amount: "$39,950",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    img: watch,
+    name: "Apple Watch",
+    location: "6090 Marjolaine Landing",
+    date: "April",
+    piece: 411,
+    amount: "$31,200",
+    status: "Delivered",
+  },
+  {
+    id: 5,
+    img: watch,
+    name: "Apple Watch",
+    location: "6091 Marjolaine Landing",
+    date: "May",
+    piece: 90,
+    amount: "$41,885",
+    status: "Delivered",
+  },
+  {
+    id: 6,
+    img: watch,
+    name: "Apple Watch",
+    location: "6092 Marjolaine Landing",
+    date: "March",
+    piece: 23,
+    amount: "$19,440",
+    status: "Pending",
+  },
+  {
+    id: 7,
+    img: watch,
+    name: "Apple Watch",
+    location: "6093 Marjolaine Landing",
+    date: "May",
+    piece: 213,
+    amount: "$7,999",
+    status: "Pending",
+  },
+  {
+    id: 8,
+    img: watch,
+    name: "Apple Watch",
+    location: "6094 Marjolaine Landing",
+    date: "May",
+    piece: 103,
+    amount: "$34,295",
+    status: "Rejected",
+  },
+  {
+    id: 9,
+    img: watch,
+    name: "Apple Watch",
+    location: "6095 Marjolaine Landing",
+    date: "April",
+    piece: 903,
+    amount: "$29,250",
+    status: "Delivered",
+  },
+  {
+    id: 10,
+    img: watch,
+    name: "Apple Watch",
+    location: "6096 Marjolaine Landing",
+    date: "March",
+    piece: 401,
+    amount: "$33,295",
+    status: "Delivered",
+  },
+];
+
+export const MONTHS = [
+  "All",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July"
+];

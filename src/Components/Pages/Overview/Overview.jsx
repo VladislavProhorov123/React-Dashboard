@@ -4,6 +4,8 @@ import CardListDashboard from '../../Dashboard/CardListDashboard/CardListDashboa
 import Chart from './Chart/Chart'
 import CircleChart from './CircleChart/CircleChart'
 import SwiperCard from './SwiperCard/SwiperCard'
+import SalesChart from './SalesChart/SalesChart'
+import Table from './Table/Table'
 
 export default function Overview() {
   return (
@@ -13,7 +15,9 @@ export default function Overview() {
       <div className="card-inner">
         <CircleChart />
         <SwiperCard />
+        <SalesChart />
       </div>
+      <Table />
     </div>
   )
 }
