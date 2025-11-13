@@ -201,16 +201,19 @@ export const MONTHS = [
 
 export const PRODUCT_BANNER = [
   {
+    id: 1,
     date: 'November 13 - 18',
     title: 'Apple Watch Series 9',
     description: 'Stay connected, track you fitness, and monitor your health.',
   },
   {
+    id: 2,
     date: 'September 19 - 22',
     title: 'Iphone 15 Pro',
     description: 'Experience unmatched performance with the A17 Pro clip and sleek titanium design.',
   },
   {
+    id: 3,
     date: 'March 9 - 13',
     title: 'AirPods Pro 2',
     description: 'Immerse yourself in rich sound and powerful noise cancellation.',
