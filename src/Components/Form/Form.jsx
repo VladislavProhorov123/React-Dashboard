@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import "./Form.css";
+import styles from "./Form.module.css";
 
 export default function Form() {
   const {
@@ -22,10 +22,10 @@ export default function Form() {
 
   const navigate = useNavigate();
   return (
-    <div className="form-wrapper">
-      <form onSubmit={handleSubmit(onSubmit)} className="form">
-        <h1 className="title">Sign up for Dashboard</h1>
-        <p className="subtitle">
+    <div className={styles.form_wrapper}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <h1 className={styles.title}>Sign up for Dashboard</h1>
+        <p className={styles.subtitle}>
           Sign up using your email address or phone number below to get instant
           access to your Dashboard.
         </p>
@@ -48,7 +48,9 @@ export default function Form() {
             },
           })}
         />
-        {errors.fullname && <p className="error">{errors.fullname.message}</p>}
+        {errors.fullname && (
+          <p className={styles.error}>{errors.fullname.message}</p>
+        )}
 
         <input
           type="email"
@@ -61,7 +63,7 @@ export default function Form() {
             },
           })}
         />
-        {errors.email && <p className="error">{errors.email.message}</p>}
+        {errors.email && <p className={styles.error}>{errors.email.message}</p>}
         <input
           type="password"
           placeholder="Пароль"
@@ -79,7 +81,9 @@ export default function Form() {
             },
           })}
         />
-        {errors.password && <p className="error">{errors.password.message}</p>}
+        {errors.password && (
+          <p className={styles.error}>{errors.password.message}</p>
+        )}
 
         <input
           type="password"
@@ -89,20 +93,22 @@ export default function Form() {
             validate: (value) => value === password || "Пароли не совпадают",
           })}
         />
-        {errors.confirmPassword && <p className="error">{errors.confirmPassword.message}</p>}
+        {errors.confirmPassword && (
+          <p className={styles.error}>{errors.confirmPassword.message}</p>
+        )}
 
-        <label className="agree-label">
+        <label className={styles.agree_label}>
           <input
             type="checkbox"
             {...register("terms", {
               required: "Вы должны согласиться с условиями",
             })}
           />{" "}
-          Я принимаю <span className="agree">условия использования</span>
+          Я принимаю <span className={styles.agree}>условия использования</span>
         </label>
-        {errors.terms && <p className="error">{errors.terms.message}</p>}
+        {errors.terms && <p className={styles.error}>{errors.terms.message}</p>}
 
-        <button className="submit-btn" type="submit" disabled={!isTermAccepted}>
+        <button className={styles.submit_btn} type="submit" disabled={!isTermAccepted}>
           Зарегистрироваться
         </button>
       </form>

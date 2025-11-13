@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.dashboard-main {
+.dashboard_main {
     display: flex;
     flex-direction: column;
     width: 100%;

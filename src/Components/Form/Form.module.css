@@ -31,14 +31,14 @@
   font-weight: 400;
 }
 
-.form-wrapper {
+.form_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.submit-btn {
+.submit_btn {
   background: #0048d9;
   color: #fff;
   padding-block: 12px;
@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-.submit-btn:disabled {
+.submit_btn:disabled {
   cursor: not-allowed;
   background: #002b80;
   opacity: 0.8;
@@ -65,7 +65,7 @@
   color: #0048d9;
 }
 
-.agree-label {
+.agree_label {
   font-size: 14px;
   color: #b8bcca;
   display: flex;

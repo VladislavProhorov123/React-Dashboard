@@ -1,5 +1,5 @@
 import React from "react";
-import "./Chart.css";
+import styles from "./Chart.module.css";
 import {
   LineChart,
   Line,
@@ -14,7 +14,7 @@ import { DATA_CHARTS } from "../../../../Data/data";
 
 export default function Chart() {
   return (
-    <div className="chart-container" >
+    <div className={styles.chart_container} >
         <h3>Sales Details</h3>
       <ResponsiveContainer>
         <LineChart data={DATA_CHARTS} margin={{ top: 20, right: 30, left: 0, bottom: 50 }}>

@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import "./Table.css";
+import styles from "./Table.module.css";
 import { MONTHS, TABLE_DASHBOARD } from "../../../../Data/data";
 
 export default function Table() {
@@ -12,20 +12,25 @@ export default function Table() {
       : TABLE_DASHBOARD.filter((item) => item.date === selectedMonth);
 
   return (
-    <div className="table">
-      <div className="table-info">
+    <div className={styles.table}>
+      <div className={styles.table_info}>
         <h3>Deals Details</h3>
-        <div className="dropdown">
-          <button className="dropdown-btn" onClick={() => setOpen(!open)}>
+        <div className={styles.dropdown}>
+          <button className={styles.dropdown_btn} onClick={() => setOpen(!open)}>
             <span>{selectedMonth}</span>
-            <i className={open === false ? 'ri-arrow-drop-down-line' : 'ri-arrow-drop-up-line'}></i>
+            <i
+              className={
+                open === false
+                  ? "ri-arrow-drop-down-line"
+                  : "ri-arrow-drop-up-line"
+              }
+            ></i>
           </button>
           {open && (
-            <ul className="dropdown-menu">
+            <ul className={styles.dropdown_menu}>
               {MONTHS.map((month) => (
                 <li
                   key={month}
-                  className=""
                   onClick={() => {
                     setSelectedMonth(month);
                     setOpen(false);
@@ -60,7 +65,7 @@ export default function Table() {
               <td>{item.amount}</td>
               <td>
                 <span
-                  className="status"
+                  className={styles.status}
                   style={{
                     backgroundColor:
                       item.status === "Delivered"
@@ -78,12 +83,11 @@ export default function Table() {
               </td>
             </tr>
           ))}
-          
         </tbody>
       </table>
       {filteredProduct.length === 0 && (
-            <div className="filtered-info">Нет данных за выбранный месяц</div>
-          )}
+        <div className={styles.filtered_info}>Нет данных за выбранный месяц</div>
+      )}
     </div>
   );
 }

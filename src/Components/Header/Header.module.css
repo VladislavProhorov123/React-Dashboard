@@ -7,19 +7,19 @@
   padding-right: 30px;
 }
 
-.header-inner-right {
+.header_inner_right {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-.header-inner i {
+.header_inner i {
   color: #202224;
   font-size: 20px;
   margin-right: 24px;
 }
 
-.header-inner input {
+.header_inner input {
   border: 1px solid #d5d5d5;
   background: #f5f6fa;
   padding: 10px 300px 10px 45px;
@@ -29,24 +29,24 @@
   border-radius: 18px;
 }
 
-.header-inner label i {
+.header_inner label i {
   position: absolute;
   color: #8a8c8f;
   left: 16px;
   top: 0;
 }
 
-.header-inner label {
+.header_inner label {
   position: relative;
 }
 
-.language-dropdown {
+.language_dropdown {
   position: relative;
   display: inline-block;
   width: 120px;
 }
 
-.dropdown-toggle {
+.dropdown_toggle {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -55,35 +55,35 @@
   
 }
 
-.dropdown-toggle span {
+.dropdown_toggle span {
   color: #646464;
   font-size: 14px;
 }
 
-.dropdown-toggle i {
+.dropdown_toggle i {
   font-size: 22px;
   color: #646464;
 }
 
-.menu-item {
+.menu_item {
     display: flex;
     align-items: center;
     gap: 10px;
     color: #404040;
 }
 
-.flag-img {
+.flag_img {
   width: 32px;
   height: 22px;
   object-fit: cover;
   border-radius: 2px;
 }
 
-.main-flag-img {
+.main_flag_img {
     border-radius: 4px;
 }
 
-.dropdown-menu {
+.dropdown_menu {
   position: absolute;
   top: 110%;
   left: 0;
@@ -98,7 +98,7 @@
   z-index: 100;
 }
 
-.dropdown-menu li {
+.dropdown_menu li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,41 +107,41 @@
   transition: background 0.2s;
 }
 
-.user-info {
+.user_info {
     display: flex;
     align-items: center;
 }
 
-.user-info-inner {
+.user_info_inner {
     margin-left: 14px;
     display: flex;
     align-items: center;
 }
 
-.user-info-text {
+.user_info_text {
   display: flex;
   flex-direction: column;
 }
 
-.user-info-text h4 {
+.user_info_text h4 {
     color: #404040;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 2px;
 }
 
-.user-info-text p {
+.user_info_text p {
     color: #565656;
     font-size: 14px;
     font-weight: 600;
 }
 
-.user-info-inner i {
+.user_info_inner i {
   color: #646464;
   font-size: 22px;
 }
 
-.info-circle {
+.info_circle {
   border: 1px solid #555;
   border-radius: 50%;
   margin-left: 20px;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./SalesChart.css";
+import styles from "./SalesChart.module.css";
 import {
   LineChart,
   Line,
@@ -14,7 +14,7 @@ import { DATA_SALES } from "../../../../Data/data";
 
 export default function SalesChart() {
   return (
-    <div className="sales-chart">
+    <div className={styles.sales_chart}>
       <h3>Sales Analytics</h3>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart

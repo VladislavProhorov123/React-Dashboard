@@ -1,11 +1,11 @@
 import React from "react";
 import { CARD_DASHBOARD } from "../../../Data/data";
 import CardDashboard from "../CardDashboard/CardDashboard";
-import './CardListDashboard.css'
+import styles from './CardListDashboard.module.css'
 
 export default function CardListDashboard() {
   return (
-    <div className="cards-list">
+    <div className={styles.cards_list}>
       {CARD_DASHBOARD.map((card) => (
         <CardDashboard
           key={card.id}

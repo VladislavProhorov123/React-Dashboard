@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import styles from "./Header.module.css";
 import notification from "/src/assets/Icon.svg";
 import user from "/src/assets/profile.svg"
 import { LANGUAGES } from "../../Data/data";
@@ -16,51 +16,51 @@ export default function Header() {
 
   const currentLang = LANGUAGES.find((lang) => lang.code === selectedLang);
   return (
-    <div className="header">
-      <div className="header-inner">
+    <div className={styles.header}>
+      <div className={styles.header_inner}>
         <button>
-          <i className="ri-menu-line"></i>
+          <i className={styles["ri-menu-line"]}></i>
         </button>
         <label htmlFor="">
-          <i className="ri-search-line"></i>
+          <i className={styles["ri-search-line"]}></i>
           <input type="text" placeholder="Search" />
         </label>
       </div>
-      <div className="header-inner-right">
+      <div className={styles.header_inner_right}>
         <button>
-          <img src={notification} alt="" className="" />
+          <img src={notification} alt=""  />
         </button>
-        <div className="language-dropdown">
+        <div className={styles.language_dropdown}>
           <button
-            className="dropdown-toggle"
+            className={styles.dropdown_toggle}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <img src={currentLang.flag} alt="" className="main-flag-img" />
+            <img src={currentLang.flag} alt="" className={styles.main_flag_img} />
             <span>{currentLang.name}</span>
             <i className={isOpen === false ? 'ri-arrow-drop-down-line' : 'ri-arrow-drop-up-line'}></i>
           </button>
           {isOpen && (
-            <ul className="dropdown-menu">
+            <ul className={styles.dropdown_menu}>
               {LANGUAGES.map((lang) => (
                 <li key={lang.code} onClick={() => handleSelect(lang.code)}>
-                  <div className="menu-item">
-                    <img src={lang.flag} alt="" className="flag-img" />
+                  <div className={styles.menu_item}>
+                    <img src={lang.flag} alt="" className={styles.flag_img} />
                     <span>{lang.name}</span>
                   </div>
-                  {selectedLang === lang.code && <span><i className="ri-check-fill"></i></span>}
+                  {selectedLang === lang.code && <span><i className={styles["ri-check-fill"]}></i></span>}
                 </li>
               ))}
             </ul>
           )}
         </div>
-        <div className="user-info">
+        <div className={styles.user_info}>
           <img src={user} alt="" />
-          <div className="user-info-inner">
-            <div className="user-info-text">
+          <div className={styles.user_info_inner}>
+            <div className={styles.user_info_text}>
             <h4>Vlad Prohorov</h4>
             <p>Admin</p>
             </div>
-            <button onClick={() => setIsOpneProfile(!isOpneProfile)} className="info-circle">
+            <button onClick={() => setIsOpneProfile(!isOpneProfile)} className={styles.info_circle}>
               <i className={isOpneProfile === false ? 'ri-arrow-drop-down-line' : 'ri-arrow-drop-up-line'}></i>
             </button>
           </div>

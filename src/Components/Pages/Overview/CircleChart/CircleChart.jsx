@@ -1,5 +1,5 @@
 import React from "react";
-import "./CircleChart.css";
+import styles from "./CircleChart.module.css";
 import {
   PieChart,
   Pie,
@@ -14,9 +14,9 @@ const COLORS = ["#2563eb", "#60a5fa"];
 
 export default function CircleChart() {
   return (
-    <div className="circle-chart">
+    <div className={styles.circle_chart}>
       <h3>Customers</h3>
-      <div className="chart-inner">
+      <div className={styles.chart_inner}>
         <ResponsiveContainer width={260} height={260}>
           <PieChart>
             <Pie

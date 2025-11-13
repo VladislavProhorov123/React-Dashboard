@@ -1,5 +1,5 @@
 import React from "react";
-import './CardDashboard.css'
+import styles from './CardDashboard.module.css'
 
 export default function CardDashboard({
   title,
@@ -11,18 +11,18 @@ export default function CardDashboard({
   logo,
 }) {
   return (
-    <div className="card">
-      <div className="card-inner">
-        <div className="card-info">
+    <div className={styles.card}>
+      <div className={styles.card_inner}>
+        <div className={styles.card_info}>
         <h3>{title}</h3>
         <p>{number}</p>
         </div>
-        <div className="color-circle" style={{ backgroundColor: color }}>
+        <div className={styles.color_circle} style={{ backgroundColor: color }}>
         <img src={logo} alt="" />
       </div>
       </div>
       
-      <p className="chart-text">
+      <p className={styles.chart_text}>
         <img src={icon} alt="" /> {percent} {text}
       </p>
     </div>

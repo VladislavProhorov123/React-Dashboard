@@ -98,7 +98,7 @@ export const TABLE_DASHBOARD = [
   {
     id: 1,
     img: watch,
-    name: "Apple Watch",
+    name: "Apple Watch (2022)",
     location: "6087 Marjolaine Landing",
     date: "June",
     piece: 423,
@@ -108,7 +108,7 @@ export const TABLE_DASHBOARD = [
   {
     id: 2,
     img: watch,
-    name: "Apple Watch",
+    name: "HomePod Mini (2021)",
     location: "6088 Marjolaine Landing",
     date: "May",
     piece: 406,
@@ -118,7 +118,7 @@ export const TABLE_DASHBOARD = [
   {
     id: 3,
     img: watch,
-    name: "Apple Watch",
+    name: "AirPods Pro (2023)",
     location: "6089 Marjolaine Landing",
     date: "April",
     piece: 612,
@@ -127,8 +127,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 4,
-    img: watch,
-    name: "Apple Watch",
+    name: "Apple TV 4K (2023)",
     location: "6090 Marjolaine Landing",
     date: "April",
     piece: 411,
@@ -137,8 +136,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 5,
-    img: watch,
-    name: "Apple Watch",
+    name: "Mac Pro (2024)",
     location: "6091 Marjolaine Landing",
     date: "May",
     piece: 90,
@@ -147,8 +145,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 6,
-    img: watch,
-    name: "Apple Watch",
+    name: "Mac Mini (2025)",
     location: "6092 Marjolaine Landing",
     date: "March",
     piece: 23,
@@ -157,8 +154,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 7,
-    img: watch,
-    name: "Apple Watch",
+    name: "iMac 24 (2021)",
     location: "6093 Marjolaine Landing",
     date: "May",
     piece: 213,
@@ -167,8 +163,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 8,
-    img: watch,
-    name: "Apple Watch",
+    name: "MacBook Air (2023)",
     location: "6094 Marjolaine Landing",
     date: "May",
     piece: 103,
@@ -177,8 +172,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 9,
-    img: watch,
-    name: "Apple Watch",
+    name: "iPad Pro (2022)",
     location: "6095 Marjolaine Landing",
     date: "April",
     piece: 903,
@@ -187,8 +181,7 @@ export const TABLE_DASHBOARD = [
   },
   {
     id: 10,
-    img: watch,
-    name: "Apple Watch",
+    name: "Iphone 15 (2023)",
     location: "6096 Marjolaine Landing",
     date: "March",
     piece: 401,
@@ -205,3 +198,21 @@ export const MONTHS = [
   "June",
   "July"
 ];
+
+export const PRODUCT_BANNER = [
+  {
+    date: 'November 13 - 18',
+    title: 'Apple Watch Series 9',
+    description: 'Stay connected, track you fitness, and monitor your health.',
+  },
+  {
+    date: 'September 19 - 22',
+    title: 'Iphone 15 Pro',
+    description: 'Experience unmatched performance with the A17 Pro clip and sleek titanium design.',
+  },
+  {
+    date: 'March 9 - 13',
+    title: 'AirPods Pro 2',
+    description: 'Immerse yourself in rich sound and powerful noise cancellation.',
+  },
+]
