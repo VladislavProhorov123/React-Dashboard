@@ -3,16 +3,24 @@ import styles from "./Header.module.css";
 import notification from "/src/assets/Icon.svg";
 import user from "/src/assets/profile.svg"
 import { LANGUAGES } from "../../Data/data";
+import profile_icon1 from '/src/assets/profile-icon1.svg'
+import profile_icon2 from '/src/assets/profile-icon2.svg'
+import profile_icon3 from '/src/assets/profile-icon3.svg'
+import profile_icon4 from '/src/assets/profile-icon4.svg'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("en");
-  const [isOpneProfile, setIsOpneProfile] = useState(false)
+  const [isOpenProfile, setIsOpenProfile] = useState(false)
 
   const handleSelect = (code) => {
     setSelectedLang(code);
     setIsOpen(false);
   };
+
+  const handleSelectProfile = () => {
+    setIsOpenProfile(false)
+  }
 
   const currentLang = LANGUAGES.find((lang) => lang.code === selectedLang);
   return (
@@ -60,11 +68,28 @@ export default function Header() {
             <h4>Vlad Prohorov</h4>
             <p>Admin</p>
             </div>
-            <button onClick={() => setIsOpneProfile(!isOpneProfile)} className={styles.info_circle}>
-              <i className={isOpneProfile === false ? 'ri-arrow-drop-down-line' : 'ri-arrow-drop-up-line'}></i>
+            <button onClick={() => setIsOpenProfile(!isOpenProfile)} className={styles.info_circle}>
+              <i className={isOpenProfile === false ? 'ri-arrow-drop-down-line' : 'ri-arrow-drop-up-line'}></i>
             </button>
+            {isOpenProfile && (
+            <ul className={styles.dropdown_menu_profile}>
+              <li className={styles.profile_item} onClick={() => handleSelectProfile()}>
+                <img src={profile_icon1} alt="" />Manage Account
+              </li>
+              <li className={styles.profile_item} onClick={() => handleSelectProfile()}>
+                <img src={profile_icon2} alt="" />Change Password
+              </li>
+              <li className={styles.profile_item} onClick={() => handleSelectProfile()}>
+                <img src={profile_icon3} alt="" />Activity Log 
+              </li>
+              <li className={styles.profile_item} onClick={() => handleSelectProfile()}>
+                <img src={profile_icon4} alt="" />Log out
+              </li>
+            </ul>
+          )}
           </div>
         </div>
+        
       </div>
     </div>
   );
