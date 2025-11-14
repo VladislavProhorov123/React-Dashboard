@@ -19,10 +19,10 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.header_inner}>
         <button>
-          <i className={styles["ri-menu-line"]}></i>
+          <i className="ri-menu-line"></i>
         </button>
         <label htmlFor="">
-          <i className={styles["ri-search-line"]}></i>
+          <i className="ri-search-line"></i>
           <input type="text" placeholder="Search" />
         </label>
       </div>

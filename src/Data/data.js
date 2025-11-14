@@ -10,6 +10,8 @@ import card4 from "/src/assets/card4.svg";
 import watch from "/src/assets/apple-watch.jpg";
 import air from "/src/assets/apple-hier.png";
 import iphone from "/src/assets/iphone.png";
+import iphone_card from "/src/assets/iphone1.jpg";
+
 
 export const LANGUAGES = [
   { code: "en", name: "English", flag: english },
@@ -219,3 +221,68 @@ export const PRODUCT_BANNER = [
     description: 'Immerse yourself in rich sound and powerful noise cancellation.',
   },
 ]
+
+// Data/products.js
+export const APPLE_PRODUCTS = [
+  {
+    id: 1,
+    title: "iPhone 15 Pro",
+    price: "$999",
+    rating: 4.8,
+    reviews: 120,
+    images: [
+     iphone_card, iphone_card, iphone_card
+    ]
+  },
+  {
+    id: 2,
+    title: "iPad Air",
+    price: "$599",
+    rating: 4.1,
+    reviews: 85,
+    images: [
+      iphone_card, iphone_card, iphone_card
+    ]
+  },
+  {
+    id: 3,
+    title: "MacBook Pro 14\"",
+    price: "$1999",
+    rating: 4.9,
+    reviews: 200,
+    images: [
+      iphone_card, iphone_card, iphone_card
+    ]
+  },
+  {
+    id: 4,
+    title: "Apple Watch Series 9",
+    price: "$399",
+    rating: 4.7,
+    reviews: 150,
+    images: [
+      iphone_card, iphone_card, iphone_card
+    ]
+  },
+  {
+    id: 5,
+    title: "AirPods Pro 2",
+    price: "$249",
+    rating: 3.2,
+    reviews: 90,
+    images: [
+      iphone_card, iphone_card, iphone_card
+    ]
+  },
+  {
+    id: 6,
+    title: "HomePod Mini",
+    price: "$99",
+    rating: 4.4,
+    reviews: 60,
+    images: [
+      iphone_card, iphone_card, iphone_card
+    ]
+  }
+];
+
