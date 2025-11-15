@@ -1,0 +1,9 @@
+.cards_list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cards h2 {
+    margin-bottom: 30px;
+}

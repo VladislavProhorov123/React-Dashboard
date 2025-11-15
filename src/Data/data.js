@@ -12,7 +12,6 @@ import air from "/src/assets/apple-hier.png";
 import iphone from "/src/assets/iphone.png";
 import iphone_card from "/src/assets/iphone1.jpg";
 
-
 export const LANGUAGES = [
   { code: "en", name: "English", flag: english },
   { code: "ua", name: "French", flag: franch },
@@ -192,35 +191,30 @@ export const TABLE_DASHBOARD = [
   },
 ];
 
-export const MONTHS = [
-  "All",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July"
-];
+export const MONTHS = ["All", "March", "April", "May", "June", "July"];
 
 export const PRODUCT_BANNER = [
   {
     id: 1,
-    date: 'November 13 - 18',
-    title: 'Apple Watch Series 9',
-    description: 'Stay connected, track you fitness, and monitor your health.',
+    date: "November 13 - 18",
+    title: "Apple Watch Series 9",
+    description: "Stay connected, track you fitness, and monitor your health.",
   },
   {
     id: 2,
-    date: 'September 19 - 22',
-    title: 'Iphone 15 Pro',
-    description: 'Experience unmatched performance with the A17 Pro clip and sleek titanium design.',
+    date: "September 19 - 22",
+    title: "Iphone 15 Pro",
+    description:
+      "Experience unmatched performance with the A17 Pro clip and sleek titanium design.",
   },
   {
     id: 3,
-    date: 'March 9 - 13',
-    title: 'AirPods Pro 2',
-    description: 'Immerse yourself in rich sound and powerful noise cancellation.',
+    date: "March 9 - 13",
+    title: "AirPods Pro 2",
+    description:
+      "Immerse yourself in rich sound and powerful noise cancellation.",
   },
-]
+];
 
 // Data/products.js
 export const APPLE_PRODUCTS = [
@@ -230,9 +224,7 @@ export const APPLE_PRODUCTS = [
     price: "$999",
     rating: 4.8,
     reviews: 120,
-    images: [
-     iphone_card, iphone_card, iphone_card
-    ]
+    images: [iphone_card, iphone_card, iphone_card],
   },
   {
     id: 2,
@@ -240,19 +232,15 @@ export const APPLE_PRODUCTS = [
     price: "$599",
     rating: 4.1,
     reviews: 85,
-    images: [
-      iphone_card, iphone_card, iphone_card
-    ]
+    images: [iphone_card, iphone_card, iphone_card],
   },
   {
     id: 3,
-    title: "MacBook Pro 14\"",
+    title: 'MacBook Pro 14"',
     price: "$1999",
     rating: 4.9,
     reviews: 200,
-    images: [
-      iphone_card, iphone_card, iphone_card
-    ]
+    images: [iphone_card, iphone_card, iphone_card],
   },
   {
     id: 4,
@@ -260,9 +248,7 @@ export const APPLE_PRODUCTS = [
     price: "$399",
     rating: 4.7,
     reviews: 150,
-    images: [
-      iphone_card, iphone_card, iphone_card
-    ]
+    images: [iphone_card, iphone_card, iphone_card],
   },
   {
     id: 5,
@@ -270,9 +256,7 @@ export const APPLE_PRODUCTS = [
     price: "$249",
     rating: 3.2,
     reviews: 90,
-    images: [
-      iphone_card, iphone_card, iphone_card
-    ]
+    images: [iphone_card, iphone_card, iphone_card],
   },
   {
     id: 6,
@@ -280,9 +264,51 @@ export const APPLE_PRODUCTS = [
     price: "$99",
     rating: 4.4,
     reviews: 60,
-    images: [
-      iphone_card, iphone_card, iphone_card
-    ]
-  }
+    images: [iphone_card, iphone_card, iphone_card],
+  },
 ];
 
+export const PRICING_DATA = [
+  {
+    id: 1,
+    title: "Basic",
+    price: "$14.99",
+    categories: [
+      { name: "Free Setup", available: true },
+      { name: "Bandwidth Limit 10 GB", available: true },
+      { name: "20 User Connection", available: true },
+      { name: "Analytics Report", available: false },
+      { name: "Public API Access", available: false },
+      { name: "Plugins Intregation", available: false },
+      { name: "Custom Content Management", available: false },
+    ],
+  },
+  {
+    id: 1,
+    title: "Standard",
+    price: "$49.99",
+    categories: [
+      { name: "Free Setup", available: true },
+      { name: "Bandwidth Limit 10 GB", available: true },
+      { name: "20 User Connection", available: true },
+      { name: "Analytics Report", available: true },
+      { name: "Public API Access", available: true },
+      { name: "Plugins Intregation", available: false },
+      { name: "Custom Content Management", available: false },
+    ],
+  },
+  {
+    id: 1,
+    title: "Premium",
+    price: "$89.99",
+    categories: [
+      { name: "Free Setup", available: true },
+      { name: "Bandwidth Limit 10 GB", available: true },
+      { name: "20 User Connection", available: true },
+      { name: "Analytics Report", available: true },
+      { name: "Public API Access", available: true },
+      { name: "Plugins Intregation", available: true },
+      { name: "Custom Content Management", available: true },
+    ],
+  },
+];
