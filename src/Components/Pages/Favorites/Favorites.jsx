@@ -1,21 +1,25 @@
 import React, { useContext } from "react";
-import { APPLE_PRODUCTS } from "../../../../Data/data";
-import styles from "./ProductList.module.css";
+import { FavoritesContext } from "../../../Context/FavoritesContext";
+import styles from "./Favorites.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FavoritesContext } from "../../../../Context/FavoritesContext";
 
-export default function ProductList() {
+export default function Favorites() {
   const { favorites, toggleFavorite } = useContext(FavoritesContext);
-
   return (
-    <div className={styles.card_list}>
-      {APPLE_PRODUCTS.map((product) => {
-        const isLiked = favorites.some((item) => item.id === product.id);
+    <div>
+      <h2>Favorites</h2>
 
-        return (
+      {favorites.length === 0 && (
+        <p className={styles.empty_product}>
+          Нет сохранённых товаров. Нажмите на сердечко, чтобы добавить в
+          избранное.
+        </p>
+      )}
+      <div className={styles.product_inner}>
+        {favorites.map((product) => (
           <div className={styles.product_card} key={product.id}>
             <Swiper modules={[Navigation]} navigation slidesPerView={1}>
               {product.images.map((img, index) => (
@@ -38,14 +42,14 @@ export default function ProductList() {
                 className={styles.like}
                 onClick={() => toggleFavorite(product)}
               >
-                <i className={isLiked ? "ri-heart-fill" : "ri-heart-line"}></i>
+                <i className="ri-heart-fill"></i>
               </button>
             </div>
 
             <button className={styles.edit}>Edit Product</button>
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 }

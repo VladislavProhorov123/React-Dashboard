@@ -3,6 +3,7 @@ import Overview from "../Pages/Overview/Overview";
 import Products from "../Pages/Products/Products";
 import styles from "./Content.module.css";
 import CardListDashboard from "../Dashboard/CardListDashboard/CardListDashboard";
+import Favorites from "../Pages/Favorites/Favorites";
 
 export default function Content({ activeTab }) {
   return (
@@ -21,6 +22,12 @@ export default function Content({ activeTab }) {
                 <Products />
               </div>
             );
+          case "favorites": 
+          return (
+            <div>
+              <Favorites />
+            </div>
+          )
         }
       })()}
     </div>
