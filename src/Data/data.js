@@ -357,3 +357,16 @@ export const ACCORDION_ITEMS = [
       "Yes! Our mobile app is available for both iOS and Android. Search for our brand name in the App Store or Google Play. ",
   },
 ];
+
+export const QUESTIONS_CHART_DATA = [
+  { subject: "Account", A: 85 },
+  { subject: "Billing", A: 120 },
+  { subject: "Technical", A: 95 },
+  { subject: "Shipping", A: 70 },
+  { subject: "Refunds", A: 99 },
+  { subject: "Security", A: 40 },
+  { subject: "Integrations", A: 60 },  
+  { subject: "Mobile App", A: 69 },      
+  { subject: "Notifications", A: 30 },    
+  { subject: "General", A: 90 },
+];
