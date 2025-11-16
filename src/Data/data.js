@@ -312,3 +312,48 @@ export const PRICING_DATA = [
     ],
   },
 ];
+
+export const ACCORDION_ITEMS = [
+  {
+    id: 1,
+    title: "How can I reset my password?",
+    context:
+      "You can reset your password by clicking “Forgot password?” on the login page. We’ll send a secure link to your email so you can create a new one.",
+  },
+  {
+    id: 2,
+    title: "How long does it take to receive support?",
+    context:
+      "Our average response time is 10–20 minutes during business hours. For complex issues, it may take up to a few hours.",
+  },
+  {
+    id: 3,
+    title: "Can I change my subscription plan later?",
+    context:
+      "Yes, you can upgrade or downgrade your plan anytime from your Account Settings → Billing page. Changes apply immediately.",
+  },
+  {
+    id: 4,
+    title: "Do you offer refunds?",
+    context:
+      "Yes, we offer refunds within 14 days of purchase if you are not satisfied with the service. Contact support to request one.",
+  },
+  {
+    id: 5,
+    title: "Is my data safe with your platform?",
+    context:
+      "Absolutely. We use end-to-end encryption, secure cloud servers, and regular security audits to protect all user data.",
+  },
+  {
+    id: 6,
+    title: "How can I contact customer support?",
+    context:
+      "You can reach our support team via live chat or email at support@company.com. We’re available 7 days a week.",
+  },
+  {
+    id: 7,
+    title: "Do you have a mobile app?",
+    context:
+      "Yes! Our mobile app is available for both iOS and Android. Search for our brand name in the App Store or Google Play. ",
+  },
+];

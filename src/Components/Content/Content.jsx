@@ -5,6 +5,7 @@ import styles from "./Content.module.css";
 import CardListDashboard from "../Dashboard/CardListDashboard/CardListDashboard";
 import Favorites from "../Pages/Favorites/Favorites";
 import Pricing from "../Pages/Pricing/Pricing";
+import Questions from "../Pages/Questions/Questions";
 
 export default function Content({ activeTab }) {
   return (
@@ -33,6 +34,12 @@ export default function Content({ activeTab }) {
             return (
               <div>
                 <Pricing />
+              </div>
+            )
+            case 'questions': 
+            return (
+              <div>
+                 <Questions /> 
               </div>
             )
         }

@@ -67,6 +67,12 @@ export default function SideBar({ activeTab, setActiveTab }) {
           <i className="ri-settings-3-line"></i>Setting
         </button>
         <button
+          onClick={() => setActiveTab("questions")}
+          className={activeTab === "questions" ? "btn active" : "button"}
+        >
+          <i class="ri-question-answer-line"></i>Questions
+        </button>
+        <button
           onClick={() => setActiveTab("logout")}
           className={activeTab === "logout" ? "btn active" : "button"}
         >
