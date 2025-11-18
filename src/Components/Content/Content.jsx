@@ -6,6 +6,7 @@ import CardListDashboard from "../Dashboard/CardListDashboard/CardListDashboard"
 import Favorites from "../Pages/Favorites/Favorites";
 import Pricing from "../Pages/Pricing/Pricing";
 import Questions from "../Pages/Questions/Questions";
+import ToDo from "../Pages/ToDo/ToDo";
 
 export default function Content({ activeTab }) {
   return (
@@ -24,24 +25,28 @@ export default function Content({ activeTab }) {
                 <Products />
               </div>
             );
-          case "favorites": 
-          return (
-            <div>
-              <Favorites />
-            </div>
-          )
-          case 'pricing':
+          case "favorites":
+            return (
+              <div>
+                <Favorites />
+              </div>
+            );
+          case "pricing":
             return (
               <div>
                 <Pricing />
               </div>
-            )
-            case 'questions': 
+            );
+          case "questions":
             return (
               <div>
-                 <Questions /> 
+                <Questions />
               </div>
-            )
+            );
+          case "to-do":
+            return <div>
+              <ToDo />
+            </div>;
         }
       })()}
     </div>

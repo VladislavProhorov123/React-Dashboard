@@ -1,0 +1,84 @@
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo_input {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.new_task {
+  background: #4379ee;
+  color: #fff;
+  width: 148px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: 0.4s ;
+}
+
+.todo_wrapper input {
+  padding: 20px 800px 20px 20px;
+  outline: 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+}
+
+.btn_circle {
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+
+.todo_wrapper li {
+  width: 1020px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 0;
+  font-size: 18px;
+}
+
+.new_task:hover {
+    transform: translateY(-2px);
+}
+
+.item_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trash {
+  font-size: 18px;
+}
+
+
+
+.star {
+  font-size: 18px;
+}
+
+.star i {
+  color: #F2D675;
+}
+
+.item_inner_2 {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* <i class="ri-checkbox-blank-circle-line"></i> */
+
+/* <i class="ri-star-line"></i> */
+/* <i class="ri-star-fill"></i> */
+
+/* <i class="ri-delete-bin-line"></i> */
