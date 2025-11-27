@@ -1,7 +1,8 @@
 import React from "react";
-import styles from './CardDashboard.module.css'
+import styles from "./CardDashboard.module.css";
+import { motion } from "framer-motion";
 
-export default function CardDashboard({
+const CardDashboard = ({
   title,
   number,
   text,
@@ -9,22 +10,33 @@ export default function CardDashboard({
   icon,
   color,
   logo,
-}) {
+}) => {
+  const item ={
+    hidden: {opacity: 0, y: 20},
+    show: {opacity: 1, y:0}
+  }
   return (
-    <div className={styles.card}>
+    <motion.div
+      className={styles.card}
+      variants={item}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      whileHover={{ scale: 1.01,  }}
+    >
       <div className={styles.card_inner}>
         <div className={styles.card_info}>
-        <h3>{title}</h3>
-        <p>{number}</p>
+          <h3>{title}</h3>
+          <p>{number}</p>
         </div>
         <div className={styles.color_circle} style={{ backgroundColor: color }}>
-        <img src={logo} alt="" />
+          <img src={logo} alt="" />
+        </div>
       </div>
-      </div>
-      
+
       <p className={styles.chart_text}>
         <img src={icon} alt="" /> {percent} {text}
       </p>
-    </div>
+    </motion.div>
   );
-}
+};
+
+export default CardDashboard;

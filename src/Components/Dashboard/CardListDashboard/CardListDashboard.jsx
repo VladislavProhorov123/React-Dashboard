@@ -1,11 +1,26 @@
 import React from "react";
 import { CARD_DASHBOARD } from "../../../Data/data";
 import CardDashboard from "../CardDashboard/CardDashboard";
-import styles from './CardListDashboard.module.css'
+import styles from "./CardListDashboard.module.css";
+import { motion } from "framer-motion";
 
 export default function CardListDashboard() {
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
   return (
-    <div className={styles.cards_list}>
+    <motion.div
+      className={styles.cards_list}
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
       {CARD_DASHBOARD.map((card) => (
         <CardDashboard
           key={card.id}
@@ -18,6 +33,6 @@ export default function CardListDashboard() {
           logo={card.logo}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }

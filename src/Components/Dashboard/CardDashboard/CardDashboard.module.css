@@ -1,16 +1,13 @@
 .card {
     width: 280px;
     height: 160px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     padding: 16px;
     border-radius: 14px;
     cursor: pointer;
-    transition: all 0.4s;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
 }
 
-.card:hover {
-    transform: translateY(-4px);
-}
 
 .card_inner {
     display: flex;
